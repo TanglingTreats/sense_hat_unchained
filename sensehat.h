@@ -27,6 +27,13 @@
 #define JOY_RIGHT 2
 #define JOY_ENTER 8
 
+#include <unistd.h>
+#include <stdio.h>
+#include <stdint.h>
+#include <string.h>
+#include <fcntl.h>
+#include <sys/ioctl.h>
+#include <linux/i2c-dev.h>
 //
 // Returns the air pressure in hPa
 // 1 = pressure successfully read

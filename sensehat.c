@@ -32,14 +32,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
-#include <unistd.h>
-#include <stdio.h>
-#include <stdint.h>
-#include <string.h>
-#include <fcntl.h>
-#include <sys/ioctl.h>
-#include <linux/i2c-dev.h>
 
+#include "sensehat.h"
 //
 // The LED Array is handled by a dedicated microcontroller
 // It must be updated in a single shot by writing

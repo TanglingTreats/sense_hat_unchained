@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
-#include <sensehat.h>
+#include "sensehat.h"
 //
 // Update a simple pattern on the LED matrix
 //
@@ -40,7 +40,8 @@ int main(int argc, char *argv[])
 int i;
 unsigned char ucKeys;
 
-	if (shInit(0) == 0) // Open I2C	
+  // shInit param is the index of the I2C module
+	if (shInit(1) == 0) // Open I2C	
 	{
 		printf("Unable to open sense hat; is it connected?\n");
 		return -1;
